@@ -32,16 +32,16 @@ let alarmsong=document.getElementById("song")
 function alarmRing(){
     let presentTime=new Date();
     let alarmTime=new Date();
-    console.log(alarmTime.setHours(11));
-    console.log(alarmTime.setMinutes(25));
-    console.log(alarmTime.setSeconds(4));
+    console.log(alarmTime.setHours(24));
+    console.log(alarmTime.setMinutes(0));
+    console.log(alarmTime.setSeconds(0));
     let TimeDiff=alarmTime-presentTime
     console.log(TimeDiff);
     setTimeout(()=> {
         
-        alert("your alarm is ringing")
+        alert("Happy New Year")
     },TimeDiff )
-    console.log("your alarm will ring at 11:25");
+    console.log("your alarm will ring at 24:00");
 
 }
 alarmRing()
